@@ -342,13 +342,16 @@
 }
 
 @media screen and (max-width:1000px){
+    .varian-title span{
+        width:100%
+    }
     .artikel-container{
         padding-left:20px;
         padding-right:20px;
     }
     .artikel{
         flex-direction: column;
-        height:700px;
+        height:auto;
         width:80%;
     }
     .artikel-container-sub{
