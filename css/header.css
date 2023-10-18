@@ -135,7 +135,7 @@
 }
 @media screen and (max-width:800px){
     .logo{
-        margin:0;
+        margin:0
     }
     .logo span{
         font-size: 30px;

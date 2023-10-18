@@ -346,7 +346,7 @@ img {
     }
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:800px){
     .varian-title span{
         width:100%
     }
@@ -387,4 +387,11 @@ img {
         margin-left:0px;
         padding-right:40px;
     }
+    .varian-content:hover{
+        margin:30px 20px;
+    }
+    .varian-desc span:hover{
+        width:120px;
+    }
+    
 }
