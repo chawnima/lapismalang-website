@@ -17,10 +17,14 @@
     object-fit:contain;
     object-position: top;
 }
-
+img {
+    width: 100%;
+    height: auto;
+}
 
 .container-info1{
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 .info1-gambar{
     display:flex;
@@ -69,6 +73,7 @@
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     margin-bottom: 100px;
     border-style:none;
     border-radius:20px;
@@ -168,6 +173,7 @@
 .varian-desc span:hover{
     width:150px;
 }
+
 .varian-desc-sub{
     font-size:14px;
     padding:10px 15px;
@@ -327,7 +333,6 @@
     white-space: nowrap;
     color:rgb(194, 194, 194)
 }
-
 
 @media screen and (max-width:1600px) and (min-width:1000px){
     .artikel{

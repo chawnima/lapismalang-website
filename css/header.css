@@ -9,7 +9,22 @@
     align-items: center;
     justify-content: space-between;
     font-family: Amatic SC, Roboto;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+    z-index: 99;
+}
+
+.header-lain{
+    height:70px;
+    background-color: rgb(62, 78, 79);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Amatic SC, Roboto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
     z-index: 99;
 }
 
@@ -105,11 +120,33 @@
     text-decoration: none;
     font-weight: bold;
 }
-@media screen and (max-width:1000px){
+.navigate-resp{
+    display:none;
+    justify-content: right;
+    align-items: center;
+    width: 30%;
+    height: 70px;
+    flex:1;
+}
+.navigate-resp img{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+@media screen and (max-width:800px){
+    .logo{
+        margin:0;
+    }
     .logo span{
         font-size: 30px;
     }
     .medsos{
         display:none;
+    }
+    .navigate{
+        display:none;
+    }
+    .navigate-resp{
+        display:flex;
     }
 }
