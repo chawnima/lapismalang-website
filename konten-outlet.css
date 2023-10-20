@@ -1,0 +1,63 @@
+.variant-map {
+    font-family: Amatic SC, Roboto;
+    font-size:60px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.address, .opening-hours, .phone{
+    font-size:20px;
+    font-family: Merriweather Sans, Roboto;
+    color: hsl(0, 0%, 60%);
+}
+.map-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:30px 10%;
+    padding-top:30px;
+}
+
+.map-location {
+    width: 45%;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#map, #map2, #map3, #map4, #map5, #map6, #map7, #map8, #map9 {
+    height: 400px;
+    width: 100%;
+    margin-bottom:10px;
+}
+.map-pict {
+    object-fit: cover;
+    object-position: 20% 20%;
+    transition: transform 0.3s ease-in-out;
+    margin-top:10px;
+}
+.map-pict:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+@media screen and (min-width:800px) and (max-width:1390px){
+    .map-container{
+        margin:0;
+    }
+    .map-location{
+        width:40%;
+        margin:10px 20px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .map-container{
+        margin:0;
+    }
+    .map-location{
+        width:70%;
+    }
+}
