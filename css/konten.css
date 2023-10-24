@@ -1,5 +1,9 @@
 html,body{
     overflow-x: hidden;
+    
+}
+section{
+    z-index: -20;
 }
 .body{
     margin:0;
@@ -36,6 +40,7 @@ img {
     align-items: center;
     font-family: Amatic SC, Roboto;
     margin-bottom: 50px;
+    
 }
 .info1-gambar img{
     flex:1;
@@ -86,6 +91,9 @@ img {
     padding-top:20px;
     padding-bottom:20px;
     box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.35) inset;
+    position: relative;
+    z-index: 5;
+    overflow: visible;
 }
 .varian-title{
     justify-content: center;
@@ -193,10 +201,35 @@ img {
     margin-bottom: 100px;
 }
 .artikel-container-title{
-    width:40%;
+    width:100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.artikel-container-title span{
     border-bottom-style:solid ;
     border-color:rgb(255, 227, 0);
-    margin-bottom: 50px;
+    align-self: flex-end;
+}
+.gambar-blkg{
+    width:500px;
+}
+.gambar-blkg img{
+    width: 70%;
+}
+.absolute-bintang-art{
+    width:100px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.absolute-bintang-art2{
+    width:80px;
+    position: absolute;
+    bottom:-10px;
+    right:80px;
+    rotate: 30deg;
 }
 .artikel-container-title span{
     font-family: Amatic SC, Roboto;
@@ -284,42 +317,55 @@ img {
     white-space: nowrap;
     border-radius: 6px;
 }
-
 .footer{
     background-color: rgb(32, 32, 32);
-    padding-top:50px;
-    padding-bottom: 40px;
-    padding-left:20%;
-    padding-right: 20%;
-    display:flex;
-    align-items: center;
-    justify-content: left;
+    padding-top: 180px;
+    padding-bottom: 30px;
+    padding-left: 8%;
+    padding-right: 8%;  
+    position:relative; 
 }
-.footer-kiri{
-    display:flex;
-    flex-direction: column;
+.gambar-footer{
+    position: absolute;
+    top:-350px;
+    right:-100px;
+}
+.footer-kiri-img{
+    display:inline-block;
     align-items: center;
     justify-content: center;
-    border-right-style: solid;
-    padding-right:100px;
-    border-width: 5px;
-    border-color:rgb(87, 87, 87)
 }
-.footer-kiri img{
-    margin-bottom: 40px;
+.footer-kiri-img img{
+    display: block;
+    margin-bottom: 20px;
     width:200px;
-
 }
-.footer-kiri span{
+.footer-kiri-img span{
+    text-align: center;
+    display: flex;
+    color: gray;
+    width: 200px;
     font-family: Amatic SC, Roboto;
-    font-size: 40px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.footer-kiri-title{
+    display: block;
+    padding: 40px;
+}
+.footer-kiri-title span{
+    display: block;
+    font-size: 70px;
     font-weight: bold;
+    font-family: Amatic SC, Roboto;
+    border-bottom-style: solid;
+    border-color: rgb(255, 227, 0);
+    border-width: 50%;
 }
 .footer-kanan{
     display:flex;
     flex-direction: column;
-    gap:6px;
-    margin-left:40px;
+    gap:10px;
 }
 .footer-link{
     flex:1;
@@ -327,7 +373,6 @@ img {
     flex-direction: row;
     gap:10px;
     align-items: center;
-    width:200px;
 }
 .footer-link img{
     width:20px
@@ -336,7 +381,46 @@ img {
     white-space: nowrap;
     color:rgb(194, 194, 194)
 }
-
+.wave img{
+    width:100%;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-top{
+    position: absolute;
+    rotate: 180deg;
+    top:-3px;
+    right:0;
+    left:0;
+}
+.back-to-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back-to-top button{
+    margin-top: 30px;
+    display: block;
+    font-size: 12px;
+    font-weight: light;
+    font-family: Amatic SC, Roboto;
+    border: none; 
+    outline: none; 
+    background-color: rgb(40, 40, 40); 
+    color: white; 
+    cursor: pointer; 
+    padding: 10px;
+    border-radius: 20px; 
+    transition: background-color 0.2s, color 0.2s;
+}
+.back-to-top button:hover{
+    background-color: rgb(255, 227, 0);
+    color: rgb(32, 32, 32);
+}
 @media screen and (max-width:1600px) and (min-width:1000px){
     .artikel{
         height:400px;
@@ -399,5 +483,10 @@ img {
     .varian-desc span:hover{
         width:120px;
     }
-    
+    .footer-bottom{
+        flex-direction: column;
+    }
+    .gambar-footer{
+        display: none;
+    }
 }
